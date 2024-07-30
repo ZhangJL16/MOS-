@@ -9,6 +9,8 @@ ubuntu系统安装，选择的是Ubuntu 22.04LS(可采用虚拟机或双系统�
 
 qemu ：用于模拟所需的硬件平台，以便操作系统运行
 
+资源里面：guide-book有基础的学习操作流程，可以先看下这个
+
 二、操作流程
 ------
 
@@ -30,7 +32,7 @@ qemu ：用于模拟所需的硬件平台，以便操作系统运行
 
 你可以先试下我的订阅地址：[https://mojie0201.xn--8stx8olrwkucjq3b.com/api/v1/client/subscribe?token=5fbb9d9c75fc8f7dcedf72d1f07c05cc](https://mojie0201.xn--8stx8olrwkucjq3b.com/api/v1/client/subscribe?token=5fbb9d9c75fc8f7dcedf72d1f07c05cc "https://mojie0201.xn--8stx8olrwkucjq3b.com/api/v1/client/subscribe?token=5fbb9d9c75fc8f7dcedf72d1f07c05cc")
 
- 复制这个网址到那个软件里去，那个mojie的网址要是打不开，直接在我下面资源里面下载deb文件
+ 复制这个网址到那个软件里去，那个mojie的网址要是打不开，直接在我下面资源里面下载deb文件clash-verge_amd64.deb安装
 
 [la32r-QEMU: 基于开源LoongArch64-QEMU构建的支持LoongArch32精简指令集的QEMU. 使用方法见Wiki](https://gitee.com/loongson-edu/la32r-QEMU "la32r-QEMU: 基于开源LoongArch64-QEMU构建的支持LoongArch32精简指令集的QEMU. 使用方法见Wiki")
 
@@ -40,6 +42,7 @@ qemu ：用于模拟所需的硬件平台，以便操作系统运行
 
 ![](https://i-blog.csdnimg.cn/direct/11c21ec070f949938117a483824ca115.png)编辑
 
+
 这个链接中下载代码，然后按照[Wiki - Gitee.com](https://gitee.com/loongson-edu/la32r-QEMU/wikis/qemu-system-loongarch32%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E "Wiki - Gitee.com")这个里面的提示做，只需要执行complie部分，最后记得加一个
 
 ```
@@ -48,7 +51,7 @@ make install
 
 ### MOS操作系统安装
 
-见资源下载，下载安装好后，直接在mos的文件夹下打开终端，执行
+见资源下载la32r_ans.zip，下载好后，直接在该文件夹（即为mos系统文件夹）下打开终端，执行
 
 ```
 make test lab=6_2
@@ -63,3 +66,6 @@ make run
 效果图大概长这个样子，这个图是学长内存管理部分的验证图，咱们接下来应该还有个文件管理没有做，学长是把FATFS移植过来了，但是他据说也没跑通。咱们得自己解决，我最近在做文件管理，停滞了一段时间，你要是搞到这里了，咱们可以一块讨论讨论。
 
 ![](https://i-blog.csdnimg.cn/direct/1ccef473895743cfba185a0e166f901c.png)编辑
+
+
+
